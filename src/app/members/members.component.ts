@@ -9,7 +9,7 @@ import { MEMBERS } from '../exportData/memberList';
 export class MembersComponent implements OnInit {
 
     members = MEMBERS;
-    memberTypes = {};
+    memberTypes = [];
 
     constructor() { }
 
@@ -18,8 +18,10 @@ export class MembersComponent implements OnInit {
     }
 
     getMemberTypes(): void {
-        for(var value of this.members){
-            console.log(value);
+        let tempTypes = new Set();
+        for(let value of this.members){
+            tempTypes.add(value.type);
         }
+        this.memberTypes = Array.from(tempTypes);
     }
 }

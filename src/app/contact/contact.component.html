@@ -1,3 +1,11 @@
-<p>
-  contact works!
-</p>
+<h2>Contacts</h2>
+<div *ngIf="contactInfo">
+    <h4>Address</h4>
+    <div class="address">
+        <span class="name"><p>{{contactInfo.name}}</p></span>
+        <span class="address"><p>{{contactInfo.address}}</p></span>
+        <span class="geocode">Geocode: <p>{{contactInfo.geocode}}</p></span>
+        <span class="phone">Phone: <p>{{contactInfo.phone}}</p></span>
+        <span class="fax">Fax: <p>{{contactInfo.fax}}</p></span>
+    </div>
+</div>

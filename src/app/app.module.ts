@@ -7,6 +7,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MembersComponent } from './members/members.component';
 import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { SideboardComponent } from './sideboard/sideboard.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { AppRoutingModule } from './/app-routing.module';
     AppComponent,
     DashboardComponent,
     MembersComponent,
-    ContactComponent
+    ContactComponent,
+    SideboardComponent
   ],
   imports: [
     BrowserModule,

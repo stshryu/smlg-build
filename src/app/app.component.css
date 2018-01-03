@@ -1,0 +1,22 @@
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding: 10px;
+}
+
+.navbar {
+    padding: 10px;
+}
+
+.left, .right {
+    width: 15%;
+}
+
+.middle {
+    width: 50%;
+}

@@ -1,11 +1,11 @@
 <h2>Members</h2>
-<div *ngFor="let memberType of memberTypes" class="memberType">
-    <h3>{{memberType}}</h3>
-    <div *ngFor="let member of members" class="memberInformation">
-        <ng-container *ngIf="memberType == member.type">
+<div *ngIf="memberSorted" class="memberType">
+    <div *ngFor="let type of memberTypes">
+        <h3>{{type}}</h3>
+        <div *ngFor="let member of memberSorted[type]">
             <h4>{{member.name}}</h4>
             <p>{{member.desc}}, {{member.title}}</p>
             <p *ngIf="member.mailto">{{member.mailto}}</p>
-        </ng-container>
+        </div>
     </div>
 </div>

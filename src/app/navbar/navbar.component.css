@@ -1,16 +1,10 @@
 :host {
-    position: absolute;
-    right: -200px;
     background: #bdcebe;
     display: block;
-    float: right;
+    float: left;
     height: 100%;
-    width: 200px;
-    transition: all .25s ease;
-}
-
-:host.is-showing {
-    right: 0;
+    width: 150px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
 }
 
 a {

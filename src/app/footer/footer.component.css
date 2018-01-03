@@ -1,0 +1,9 @@
+:host {
+    background: pink;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}

@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Helmet";
+    src: url("/fonts/Helmet-Regular.ttf") format("ttf"),
+    url("./fonts/Helmet-Regular.woff") format("woff");
+}

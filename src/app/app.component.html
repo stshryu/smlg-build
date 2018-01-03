@@ -1,17 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<h2>Statistical Machine Learning Group FIU</h2>
-<div class="container">
-    <div class="col left navbar">
-        <nav>
-            <a routerLink="/dashboard">Home</a>
-            <a routerLink="/members">Members</a>
-            <a routerLink="/contact">Contact</a>
-        </nav>
-    </div>
-    <div class="col middle routerOutlet">
-        <router-outlet></router-outlet>
-    </div>
-    <div class="col right sidebar">
-        <app-sideboard></app-sideboard>
+<app-header [(infoShowing)]="infoShowing"></app-header>
+<div class="app-wrapper">
+    <app-navbar></app-navbar>
+    <div class="content">
+
+        <app-sideboard [isShowing]="infoShowing"></app-sideboard>
+        <div class="col middle routerOutlet">
+            <router-outlet></router-outlet>
+        </div>
     </div>
 </div>
+<app-footer></app-footer>

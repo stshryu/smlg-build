@@ -1,5 +1,5 @@
 :host {
-    background: #bdcebe;
+    background: #081E3F;
     display: block;
     float: left;
     height: 100%;
@@ -8,6 +8,7 @@
 }
 
 a {
+    font-size: 20px;
     outline: 0;
     text-decoration: none;
     color: #FFF;

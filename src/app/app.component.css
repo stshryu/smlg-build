@@ -11,7 +11,17 @@ body {
     margin: 0;
     height: 100%;
     position: relative;
-    font-family: Helmet;
+    font-family: Roboto-Regular;
+}
+
+body h1, h2, h3 {
+    font-family: Bitter-Regular;
+    font-size: 35px;
+}
+
+p {
+    font-family: Roboto-Regular;
+    font-size: 20px;
 }
 
 app-root {
@@ -20,8 +30,8 @@ app-root {
 
 .app-wrapper{
     position: absolute;
-    top: 50px;
-    bottom: 50px;
+    top: 75px;
+    bottom: 35px;
     width: 100%;
 }
 

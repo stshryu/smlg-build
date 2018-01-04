@@ -1,9 +1,16 @@
 :host {
-    background: pink;
+    background: #F8C93E;
     position: fixed;
     bottom: 0;
-    height: 50px;
+    height: 35px;
     width: 100%;
     text-align: center;
     z-index: 1;
+}
+
+p {
+    font-size: 10px;
+    line-height: 35px;
+    text-align: center;
+    margin: 0;
 }

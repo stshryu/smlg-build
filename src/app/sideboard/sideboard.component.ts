@@ -15,5 +15,4 @@ export class SideboardComponent implements OnInit {
 
     ngOnInit() {
     }
-
 }

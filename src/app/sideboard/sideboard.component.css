@@ -1,16 +1,33 @@
 :host {
     position: absolute;
     right: -200px;
-    background: #bdcebe;
+    background: #FFF;
     display: block;
     float: right;
     height: 100%;
     width: 200px;
     transition: all .25s ease;
+    border-left: 1px solid #bdcebe;
+}
+
+.links {
+    z-index: 1;
 }
 
 :host.is-showing {
     right: 0;
+}
+
+.greyOut {
+    position: fixed;
+    right: 200px;
+    top: 75px;
+    left: 150px;
+    height: 100%;
+    opacity: .5;
+    background: black;
+    z-index: 0;
+    transition: all 1s;
 }
 
 a {

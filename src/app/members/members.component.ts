@@ -25,7 +25,6 @@ export class MembersComponent implements OnInit {
         }
         this.memberTypes = Array.from(tempTypes);
         this.sortMemberTypes();
-        console.log(this.memberSorted);
     }
 
     sortMemberTypes(): void {

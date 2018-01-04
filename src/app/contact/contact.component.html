@@ -2,10 +2,13 @@
 <div *ngIf="contactInfo">
     <h4>Address</h4>
     <div class="address">
-        <span class="name"><p>{{contactInfo.name}}</p></span>
-        <span class="address"><p>{{contactInfo.address}}</p></span>
-        <span class="geocode">Geocode: <p>{{contactInfo.geocode}}</p></span>
-        <span class="phone">Phone: <p>{{contactInfo.phone}}</p></span>
-        <span class="fax">Fax: <p>{{contactInfo.fax}}</p></span>
+        <p>{{contactInfo.name}}</p>
+        <p>{{contactInfo.address}}</p>
+        <h4>Geocode:</h4>
+        <p> <a href="https://www.google.com/maps/place/25%C2%B045'33.0%22N+80%C2%B022'15.7%22W/@25.759175,-80.3717572,18z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0">{{contactInfo.geocode}}</a></p>
+        <h4>Phone:</h4>
+        <p>{{contactInfo.phone}}</p>
+        <h4>Fax:</h4>
+        <p>{{contactInfo.fax}}</p>
     </div>
 </div>

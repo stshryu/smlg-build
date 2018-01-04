@@ -4,8 +4,11 @@
         <h3>{{type}}</h3>
         <div *ngFor="let member of memberSorted[type]">
             <h4>{{member.name}}</h4>
-            <p>{{member.desc}}, {{member.title}}</p>
-            <p *ngIf="member.mailto">{{member.mailto}}</p>
+            <div class="indent">
+                <p class="small">{{member.desc}}</p>
+                <p class="small">{{member.title}}</p>
+                <p *ngIf="member.mailto" class="small">{{member.mailto}}</p>
+            </div>
         </div>
     </div>
 </div>
